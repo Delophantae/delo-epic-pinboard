@@ -1,0 +1,37 @@
+1) Qual o motivo da criação de uma classe chamada "Tarefa" em
+nosso sistema ?
+2) Qual a função do método READ_tarefas() ?
+3) Qual o papel do método construtor inserido dentro da lógica do
+AppComponent ?
+4) Qual o resultado da utilização do operador "new" dentro do
+método READ_tarefas() ?
+5) O que faz a diretiva "ngFor, quando utilizado na view de um
+componente Angular ?
+6) O que faz a variável "tarefaDoLoop", utilizada como parâmetro no
+ngFor ?
+7) Em que local do App foi realizada uma interpolação, e qual o
+efeito de seu uso ?
+8) Qual o propósito da criação do método CREATE_tarefas()?
+9) Em que estrutura de dados estão sendo armazenadas as tarefa
+apresentadas pelo APP ?
+10) Em Angular, como é criada uma referência local para um
+elemento da DOM ?
+11) Para que serve o "(click)=" utilizado na declaração do botão
+criado na view do AppComponent ?
+12) Por que existem dois arquivos de estilo (styles.css e
+app.component.css) diferentes em nosso App ? 
+
+
+1R: A classe tarefa existe para que possa se determinar quais informações uma tarefa deva possuir e permitirá que o app manipule facilmente instancias (objetos) do tipo "tarefa"
+2R: Neste momento ele armazena 3 tarefas dentro do array tarefas porem isso se dá pois ele está simulando o processo de leitura (do crud) de tarefas de algum repositório persistente
+3R: Ele executa o metodo READ_tarefas para que o array de tarefas seja populado com algumas tarefas para realização de testes
+4R: Ele instancia um novo objeto do tipo tarefas
+5R: Ele ira criar um loop que vai fazer um elemento <li> para cada objedo do tipo tarefa em função de um índice chamado tarefaDoLoop que contem a tarefa atual do array no loop for
+6R: Serve como o indice do loop que lê cada uma das tarefas do array tarefas
+7R: No elemento HTML <li>, o objetivo da interpolação é de trazer e apresentar um valor proveniente da lógica do componente na view
+8R: Criar novas tarefas. Uau.
+9R: Neste momento elas estão sendo armazenadas na memoria RAM do nosso computador mas isso se dá pois estamos hospendando ela localmente usando uma porta disponibilizada pelo proprio Angular a fim de testar a nossa aplicação. Este metodo é volátil então seria mais adequado se tivessemos um banco de dados onde as tarefas persistissem depois que o app é fechado como MongoDB ou MySQL
+10R: Você pode criar uma referência local a um elemento da DOM (dom é o documento html) por usar o caractere "#" em uma tag para que você possa acessá-la diretamente na lógica por meio desta. Por exemplo, se eu criar um imput e eu colocar "#meuInput" dentro da tag do elemento html eu posso acessá-la por referência na lógica usando a referência "#meuInput" que eu atribuí à ela
+11R: click é um evento que foi usado para indicar quando que o botão é clicado e foi atribuído a esse evento, o método de criar uma nova tarefa.
+12R: styles.css é o documento de estilos globais e app.component.css são os estilos específicos do componente
+

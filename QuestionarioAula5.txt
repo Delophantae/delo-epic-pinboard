@@ -1,0 +1,29 @@
+1. Para que serve o Data Bingind no Angular ?
+2. Como eu sei distinguir quem é o componente Pai e quem e é o
+componente Filho ?
+3. Quais os métodos de Data Binding apresentados em aula ?
+4. Qual método é dividido em duas partes ?
+5. Quando devo executar o método emit() ?
+6. O que é um manipulador de evento ?
+7. Que decorador deve ser utilizado para permitir que uma
+propriedade de um componente receba valores a partir do HTML ?
+8. O que é uma interpolação em Angular ?
+9. Como faço para transferir informações de um componente pai
+para um componente filho ?
+10. Como faço para transferir informações de um componente filho
+para um componente pai ?
+11. Que classe define o método emit() ?
+12. O que faz o método splice de um array ?
+
+1R: Data Binding em angular são mecanismos que servem para passar informações entre diferentes componentes da aplicação
+2R: Sempre que um componente ultiliza outros componentes é estabelecido uma relação de pai para filho, o componente que usa é o pai e o componente usado é o filho
+3R: Interpolation, Property Binding e Event Binding
+4R: Event Binding
+5R: Você executa o metodo emit() quando você quer passar uma informação de um componente filho para o pai, para isso, emitimos um evento usando emit() no filho e capturamos e manipulamos esse evento no componente pai.
+6R: Um manipulador de evento é o que usamos no componente pai para capturar um evento (vindo do filho) e executar um código que vai dizer o que deve ser feito quando esse evento acontece
+7R: @Input
+8R: interpolação em Angular é quando você exibe na view de um componente um valor proveniente de sua lógica
+9R: Você usa Property Binding
+10R: Você usa Event Binding
+11R: EventEmitter
+12R: splice em um array serve para remover ou substituir itens de um determinado array.
