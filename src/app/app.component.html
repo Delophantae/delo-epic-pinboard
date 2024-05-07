@@ -1,7 +1,8 @@
 <div class="main">
-  <h1>Guilherme Ferrari Weckwerth - 227901</h1>
+  <h1>Delo's Epic Pinboard!</h1>
+  <p>Send me anonymous (or not lol) messages. just type something in the box and click send! Your message *should* appear on the bottom of the list.</p>
   <input class="lg-text-input" #campoNovoItem (keydown.enter)="CREATE_tarefa(campoNovoItem.value); campoNovoItem.value=''"  />
-  <button class="btn-primary" (click)="CREATE_tarefa(campoNovoItem.value); campoNovoItem.value=''">Adicionar Tarefa</button>
+  <button class="btn-primary" (click)="CREATE_tarefa(campoNovoItem.value); campoNovoItem.value=''">Send!</button>
   <ul>
     <li *ngFor="let tarefaDoLoop of arrayDeTarefas">
       <app-item [tarefa]="tarefaDoLoop" (removeTarefa)="DELETE_tarefa(tarefaDoLoop)"
@@ -9,6 +10,7 @@
       <!--{{tarefaDoLoop.descricao}} (isso foi da anotação 3)-->
     </li>
   </ul>
+  <p><em>If something breaks pls hit me up on discord so I can fix it.</em></p>
 </div>
 
 <!--
@@ -26,5 +28,7 @@ objeto representado pela variável "tarefaDoLoop" da diretiva "ngFor").
 adicionadas representam o botão. Perceba associado ao evento de "click" do botão, foi
 inserida a chamada ao método CREATE_tarefa definido anteriormente, passando o texto
 digitado no campo de input.
+
+5: Editei e adicionei alguns textos
 -->
 

@@ -1,10 +1,11 @@
 <div class="item">
-    <input [id]="tarefa.descricao" type="checkbox" [checked]="tarefa.statusRealizada"
-    (change)="tarefa.statusRealizada = !tarefa.statusRealizada; modificaTarefa.emit()" />
+    
+    <!--<input [id]="tarefa.descricao" type="checkbox" [checked]="tarefa.statusRealizada"
+    (change)="tarefa.statusRealizada = !tarefa.statusRealizada; modificaTarefa.emit()" />-->
     <label [for]="tarefa.descricao">{{tarefa.descricao}}</label>
     <div *ngIf="!emEdicao" class="btn-wrapper">
-    <button class="btn" (click)="emEdicao = true ">Editar</button>
-    <button class="btn btn-warn" (click)="removeTarefa.emit()">Remover</button>
+    <!--<button class="btn" (click)="emEdicao = true ">Editar</button>
+    <button class="btn btn-warn" (click)="removeTarefa.emit()">Remover</button>-->
     </div>
     <div *ngIf="emEdicao">
     <input class="sm-text-input" #editedItem placeholder="escreva o novo nome da tarefa
@@ -17,6 +18,7 @@
    = false; modificaTarefa.emit()">Salvar</button>
     </div>
     </div>
+    <hr>
    </div>
 
 <!--
@@ -32,4 +34,10 @@
 • Quando a Tarefa estiver sendo editada:
     ◦ Um INPUT para definir a nova descrição da tarefa
     ◦ Um BUTTON para permitir cancelar a edição
-    ◦ Um BUTTON para permitir salvar a alteração-->
+    ◦ Um BUTTON para permitir salvar a alteração
+
+    5: UPDATE, removi os botões de remover, editar e o checkbox , pra colocar denovo é só descomentar as parada
+
+-->
+
+    

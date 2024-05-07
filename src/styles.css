@@ -1,5 +1,7 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
+    /*ADICIONADO*/
+    background-color: rgb(168, 152, 179);
    }
    .btn-wrapper {
     /* flexbox */
