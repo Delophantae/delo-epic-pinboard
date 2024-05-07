@@ -64,7 +64,7 @@ export class AppComponent {
 
 /*
 
-AULA 3
+ 3:
 
 • A linha do "import" permite que o AppComponent utilize as definições
 realizadas na classe "Tarefa".

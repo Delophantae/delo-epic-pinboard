@@ -6,13 +6,13 @@
     <li *ngFor="let tarefaDoLoop of arrayDeTarefas">
       <app-item [tarefa]="tarefaDoLoop" (removeTarefa)="DELETE_tarefa(tarefaDoLoop)"
       (modificaTarefa)="UPDATE_tarefa(tarefaDoLoop)" ></app-item>
-      <!--{{tarefaDoLoop.descricao}} (isso foi da AULA 3)-->
+      <!--{{tarefaDoLoop.descricao}} (isso foi da anotação 3)-->
     </li>
   </ul>
 </div>
 
 <!--
-AULA 3
+ 3:
 
   Perceba que o código acima faz uso de uma diretiva Angular de repetição chamada de
 "ngFor" juntamente com o código HTML. Esta diretiva irá criar um elemento HTML <li>
@@ -20,8 +20,7 @@ para cada objeto do tipo "Tarefa" armazenado em "arrayDeTarefas". Adicionalmente
 linha faz uso também de uma estrutura de "Data Binding" do Angular chamada de
 "interpolação", que faz uso das chaves duplas para apresentar na view (HTML) um determinado
 valor proveniente da lógica (TS) do componente (neste caso, o atributo "descricao" do
-objeto representado pela variável "tarefaDoLoop" da diretiva "ngFor"). Esses detalhes
-serão explicados de forma mais apropriada na próxima aula.
+objeto representado pela variável "tarefaDoLoop" da diretiva "ngFor"). 
 
 (input e button) A primeira linha adicionada representa um campo de input. As próximas linhas
 adicionadas representam o botão. Perceba associado ao evento de "click" do botão, foi

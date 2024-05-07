@@ -10,7 +10,7 @@ export class Tarefa {
 }
 
 /*
-AULA 3
+ 3:
 
 Perceba que o código acima define uma classe chamada de "Tarefa". Essa classe possui
 dois atributos: Um chamado de "descricao" do tipo "string" e outro chamado de
